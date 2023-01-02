@@ -1,0 +1,13 @@
+{{ "<!-- Template begins: hugo-plain-theme/layouts/_default/baseof.html. -->" | safeHTML }}
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+{{ "<!-- Template ends: hugo-plain-theme/layouts/_default/baseof.html. -->" | safeHTML }}
